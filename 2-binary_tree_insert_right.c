@@ -21,11 +21,11 @@ new_node = malloc(sizeof(binary_tree_t));
 		return (NULL);
 	new_node->parent = parent;
 	new_node->n = value;
-if (parent->left != NULL)
-	parent->left->parent = new_node;
-	new_node->left = parent->left;
+if (parent->right != NULL)
+	parent->right->parent = new_node;
+	new_node->right = parent->right;
 	new_node->right = NULL;
-	parent->left = new_node;
+	parent->right = new_node;
 	return (new_node);
 
 }
