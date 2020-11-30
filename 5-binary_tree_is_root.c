@@ -15,5 +15,5 @@ if (!node->parent)
 return (1);
 if (node == NULL)
 return (0);
-return (0); 
+return (0);
 }
