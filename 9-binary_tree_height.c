@@ -19,10 +19,6 @@ if (!tree || (!tree->left && !tree->right))
 {
 return (0);
 }
-if (tree == NULL)
-{
-return (0);
-}
 a = binary_tree_height(tree->left);
 b = binary_tree_height(tree->right);
 if (a < b)
