@@ -20,9 +20,7 @@ return (NULL);
 	node->parent = parent;
 	node->n = value;
 	if (parent->left != NULL)
-		parent->left->parent = node;
-        if (parent->right != NULL)
-	        parent->right->parent = node
+		parent->left->parent = node;	        
 	node->right = NULL;
 	node->left = parent->left;
 	parent->left = node;
